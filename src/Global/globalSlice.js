@@ -3,30 +3,18 @@ import { createSlice } from '@reduxjs/toolkit';
 export const globalSlice = createSlice({
   name: 'global',
   initialState: {
-    value: 0,
+    navigationOpen: true,
   },
   reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+    setNavigation: (state) => {
+      state.navigationOpen = !state.navigationOpen;
     },
   },
 });
 /* eslint-enable no-param-reassign */
 
-export const { increment, decrement, incrementByAmount } = globalSlice.actions;
+export const { setNavigation } = globalSlice.actions;
 
-export const incrementAsync = (amount) => (dispatch) => {
-  setTimeout(() => {
-    dispatch(incrementByAmount(amount));
-  }, 1000);
-};
-
-export const selectCount = (state) => state.global.value;
+export const selectNavigationOpen = (state) => state.global.navigationOpen;
 
 export default globalSlice.reducer;

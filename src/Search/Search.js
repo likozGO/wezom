@@ -1,8 +1,11 @@
 import React from 'react';
 import './Search.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectNavigationOpen, setNavigation } from '../Global/globalSlice';
 
 const Search = () => {
-  console.log('Search!');
+  const navigation = useSelector(selectNavigationOpen);
+  const dispatch = useDispatch();
   return (
     <section className="section-search">
       <div className="container">
@@ -10,7 +13,7 @@ const Search = () => {
           <div className="col-3" style={{ paddingRight: '20px' }}>
             <nav role="navigation">
               <div id="menuToggle">
-                <input type="checkbox" />
+                <input type="checkbox" checked={navigation} onClick={() => dispatch(setNavigation())} />
 
                 <ul id="menu">
                   <li><a href="/#">ССылка 1</a></li>
