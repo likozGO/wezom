@@ -144,10 +144,16 @@
   }
 
   .information-block {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid #f38712;
+    }
 
     &.information-block--compare {
       img {
