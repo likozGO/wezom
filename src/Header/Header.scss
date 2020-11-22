@@ -1,0 +1,210 @@
+@import "../Global/varibles";
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.section-navigation {
+  min-height: 50px;
+  background: $header-navigation-bg;
+  display: flex;
+  align-items: stretch;
+
+  .h-100 {
+    height: 100%;
+  }
+
+  .navigation {
+    height: 100%;
+
+    &-list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+
+      &--item {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        color: $header-navigation-link-color;
+        transition: color .15s linear;
+
+        &:hover {
+          color: $header-navigation-link-color--hover;
+        }
+
+        &.active {
+          color: $header-navigation-link-color--active;
+          border-bottom: 2px solid $header-navigation-link-color--active-border;
+        }
+
+        a {
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          height: 100%;
+          text-decoration: none;
+          font-size: 12px;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .section-navigation--login {
+    max-width: 125px;
+    background: $header-navigation-login-bg;
+    color: $header-navigation-login-color;
+    transition: background .15s linear;
+
+    &:hover {
+      background: $header-navigation-login-bg-hover;
+    }
+
+    &:before {
+      margin-right: 10px;
+      content: '';
+      display: flex;
+      position: relative;
+      background: url("./images/header-navigation-button.svg");
+      width: 16px;
+      height: 15px;
+      background-size: 100%;
+    }
+  }
+}
+
+
+.section-information {
+  margin-top: 33px;
+
+  .telephone-group {
+    min-height: 50px;
+    background-color: $header-information-telephone-group-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .telephone-item {
+      &:nth-child(1) {
+        padding: 10px 10px;
+      }
+
+      &:nth-child(2) {
+        padding: 10px 5px;
+      }
+
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .telephone-item.bold {
+      font-style: italic;
+      font-weight: 900;
+    }
+
+    .telephone-button {
+      height: 100%;
+      background: $header-information-callback-bg;
+      max-width: 200px;
+      align-self: stretch;
+      transition: background .15s linear;
+      color: $header-information-callback-button-color;
+
+      &:hover {
+        background: $header-information-callback-bg-hover;
+      }
+
+      &:before {
+        margin-right: 10px;
+        content: '';
+        display: flex;
+        position: relative;
+        background: url("./images/header-information-button.svg");
+        width: 16px;
+        height: 22px;
+        background-size: 100%;
+      }
+    }
+  }
+
+  .information-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.information-block--compare {
+      img {
+        width: 46px;
+        height: auto;
+      }
+    }
+
+    &.information-block--favorites {
+      img {
+        width: 35px;
+        height: auto;
+      }
+    }
+
+    &.information-block--trunk {
+      .counter {
+        position: absolute;
+        top: -22px;
+        font-size: 11px;
+        color: $header-information-block--trunk-counter-color;
+        text-transform: uppercase;
+        background-color: $header-information-block--trunk-counter-bg;
+        box-shadow: 0px 5px 8px 0px $header-information-block--trunk-counter-shadow;
+        min-width: 20px;
+        min-height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+          content: '';
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          border-top: 3px solid $header-information-block--trunk-counter-bg;
+          display: block;
+          bottom: -3px;
+        }
+      }
+
+      img {
+        width: 40px;
+        height: auto;
+      }
+    }
+
+    img {
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    span {
+      font-size: 10px;
+      color: $header-information-block-color;
+      text-transform: uppercase;
+    }
+  }
+}

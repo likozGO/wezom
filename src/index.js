@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
+import 'normalize.css';
 import './Global/index.scss';
 import './Global/grid.css';
 import store from './Global/Store';

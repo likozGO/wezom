@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.33pt" height="34.71pt" viewBox="0 0 39.33 34.71" version="1.1">
+<defs>
+<clipPath id="clip1">
+  <path d="M 0 0 L 39.328125 0 L 39.328125 23 L 0 23 Z M 0 0 "/>
+</clipPath>
+<clipPath id="clip2">
+  <path d="M 0 0 L 39.328125 0 L 39.328125 34.710938 L 0 34.710938 Z M 0 0 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<path style="fill:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:miter;stroke:rgb(100%,52.49939%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 342.929688 208.545313 L 240 208.545313 " transform="matrix(0.1,0,0,-0.1,0,34.71)"/>
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(70.199585%,72.898865%,75.299072%);stroke-opacity:1;stroke-miterlimit:10;" d="M 15 332.139063 L 86.679688 332.139063 L 181.679688 141.435938 L 328.320313 141.435938 L 378.320313 279.170313 L 195 279.170313 " transform="matrix(0.1,0,0,-0.1,0,34.71)"/>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(70.199585%,72.898865%,75.299072%);stroke-opacity:1;stroke-miterlimit:10;" d="M 225.820313 50.420313 C 225.820313 30.85 209.960938 14.990625 190.429688 14.990625 C 170.859375 14.990625 155 30.85 155 50.420313 C 155 69.990625 170.859375 85.85 190.429688 85.85 C 209.960938 85.85 225.820313 69.990625 225.820313 50.420313 Z M 225.820313 50.420313 " transform="matrix(0.1,0,0,-0.1,0,34.71)"/>
+<path style="fill:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(70.199585%,72.898865%,75.299072%);stroke-opacity:1;stroke-miterlimit:10;" d="M 355.820313 50.420313 C 355.820313 30.85 339.960938 14.990625 320.429688 14.990625 C 300.859375 14.990625 285 30.85 285 50.420313 C 285 69.990625 300.859375 85.85 320.429688 85.85 C 339.960938 85.85 355.820313 69.990625 355.820313 50.420313 Z M 355.820313 50.420313 " transform="matrix(0.1,0,0,-0.1,0,34.71)"/>
+</g>
+</g>
+</svg>
