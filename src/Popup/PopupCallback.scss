@@ -1,0 +1,29 @@
+.modal {
+  .modal-group {
+    min-width: 378px;
+    min-height: 283px;
+    padding: 40px 35px;
+  }
+
+  h4.number {
+    margin: 40px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+  }
+
+  .button-tel {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    min-height: 50px;
+    max-width: 210px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: #ff8900;
+    font-weight: bold;
+    transition: all .15s linear;
+    &:hover {
+      background: #d27812;
+    }
+  }
+}

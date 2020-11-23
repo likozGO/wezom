@@ -25,30 +25,36 @@
         }
 
         &:before {
-          width: auto;
-          height: auto;
+          content: '';
+          width: 40px;
+          height: 40px;
           display: block;
           margin-right: 15px;
         }
 
         &:nth-child(1):before {
-          content: url("images/header-filter.svg");
+          background: url("images/header-filter.svg") no-repeat center;
+          background-size: contain;
         }
 
         &:nth-child(2):before {
-          content: url("images/header-filter-2.svg");
+          background: url("images/header-filter-2.svg") no-repeat center;
+          background-size: contain;
         }
 
         &:nth-child(3):before {
-          content: url("images/header-filter-3.svg");
+          background: url("images/header-filter-3.svg") no-repeat center;
+          background-size: contain;
         }
 
         &:nth-child(4):before {
-          content: url("images/header-filter-4.svg");
+          background: url("images/header-filter-4.svg") no-repeat center;
+          background-size: contain;
         }
 
         &:nth-child(5):before {
-          content: url("images/header-filter-5.svg");
+          background: url("images/header-filter-5.svg") no-repeat center;
+          background-size: contain;
         }
 
 

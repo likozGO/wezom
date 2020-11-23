@@ -5,6 +5,7 @@ const Popup = ({ children, className = 'root-portal', el = 'div' }) => {
   const [container] = React.useState(document.createElement(el));
 
   container.classList.add(className);
+  container.classList.add('modal');
 
   React.useEffect(() => {
     document.body.appendChild(container);

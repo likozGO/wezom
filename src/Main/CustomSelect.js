@@ -1,18 +1,21 @@
 import React from 'react';
 import './CustomSelect.scss';
 
-const CustomSelect = () => (
-  <div className="custom-item custom-select">
-    <select id="standard-select">
-      <option value="Option 1">Select 1</option>
-      <option value="Option 2">Select 2</option>
-      <option value="Option 3">Select 3</option>
-      <option value="Option 4">Select 4</option>
-      <option value="Option 5">Select 5</option>
-    </select>
-    <span className="focus" />
-  </div>
-);
+const CustomSelect = () => {
+  const [randomId] = React.useState(() => Math.random().toString(36).substr(2));
+  return (
+    <div className="custom-item custom-select">
+      <select id={randomId}>
+        <option value="Option 1">Select 1</option>
+        <option value="Option 2">Select 2</option>
+        <option value="Option 3">Select 3</option>
+        <option value="Option 4">Select 4</option>
+        <option value="Option 5">Select 5</option>
+      </select>
+      <span className="focus" />
+    </div>
+  );
+};
 
 // eslint-disable-next-line react/prop-types
 const CustomInput = ({ textMin, textMax }) => (

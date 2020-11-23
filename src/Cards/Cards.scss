@@ -33,7 +33,8 @@
     }
   }
 
-  .col-3 {
+  .col-xl-3,
+  .col-6 {
     &:last-child {
       margin-bottom: 60px;
     }

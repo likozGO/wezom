@@ -5,6 +5,7 @@ import App from './App';
 import 'normalize.css';
 import './Global/index.scss';
 import './Global/grid.css';
+import './Global/media-global.scss';
 import store from './Global/Store';
 
 ReactDOM.render(

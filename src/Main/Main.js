@@ -11,8 +11,8 @@ const Main = () => {
       <div className="container">
         <div className="row no-gutters" style={{ marginRight: '-20px' }}>
           <div className="offset-3" style={{ display: !navigation && 'none' }} />
-          <div className={navigation ? 'col-9' : 'col-12'} style={{ paddingRight: '20px' }}>
-            <form className="filter">
+          <div className={navigation ? 'col-12 col-lg-9' : 'col-12'} style={{ paddingRight: '20px' }}>
+            <form className="filter" method="GET">
               <div className="filter-header">
                 <a href="/#" className="filter-header--category active"><span>Ссылка 1</span></a>
                 <a href="/#" className="filter-header--category"><span>Ссылка 2</span></a>
@@ -37,13 +37,13 @@ const Main = () => {
                     <CustomSelect />
                     <CustomSelect />
                     <CustomSelect />
-                    <CustomInput textMin="0" textMax="250000" />
+                    <CustomInput textMin="50" textMax="250000" />
                   </div>
                   <div className="filter-selects-2">
                     <CustomSelect />
                     <CustomSelect />
                     <CustomSelect />
-                    <CustomInput textMin="0" textMax="250000" />
+                    <CustomInput textMin="50" textMax="250000" />
                   </div>
                 </div>
 
