@@ -15,7 +15,7 @@ const Search = () => {
           <div className="col-3" style={{ paddingRight: '20px' }}>
             <nav role="navigation">
               <div id="menuToggle">
-                <input type="checkbox" checked={navigation} onClick={() => dispatch(setNavigation())} />
+                <input type="checkbox" defaultChecked={navigation} onClick={() => dispatch(setNavigation())} />
 
                 <ul id="menu">
                   <li><a href="/#">ССылка 1</a></li>

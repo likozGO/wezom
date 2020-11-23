@@ -23,7 +23,7 @@ const Main = () => {
               <div className="filter-body">
                 <div className="filter--tab">
                   {/* <div className="filter--tab-switcher"> */}
-                  <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+                  <input type="radio" name="tab-btn" id="tab-btn-1" value="" defaultChecked />
                   {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                   <label htmlFor="tab-btn-1">Tab 1</label>
                   <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
