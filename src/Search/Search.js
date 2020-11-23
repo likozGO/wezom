@@ -1,5 +1,7 @@
 import React from 'react';
 import './Search.scss';
+import './NavigationMenu.scss';
+import './SearchInput.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectNavigationOpen, setNavigation } from '../Global/globalSlice';
 
